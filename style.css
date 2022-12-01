@@ -1,0 +1,379 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+*{
+	box-sizing: border-box;
+}
+.dotted-hr{
+	border: dotted 6px white;
+	border-bottom: none;
+	width: 70px;
+	margin: 20px auto;
+	
+	
+}
+.navbar{
+	background-color: #0c6168;
+	padding: 10px 10px;
+	text-align: center;
+	
+	
+}
+.navbar img{
+	height: 90px;
+	width: 90px;
+	box-sizing: border-box;
+	
+}
+.nav-header{
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+[class*="col-"]{
+	float: left;
+	padding: 10px;
+
+}
+[class*="col-"]{
+    width: 100%;
+   
+}
+/* css start here */
+.nav-menu{
+	flex-direction: column;
+	padding: 20px 0;
+	
+}
+.nav-header h1 {
+    color: white;
+}
+.nav-menu ul li{
+	
+	padding: 10px;
+	margin: 20px 0;
+	background-color: #40868b;
+
+}
+.nav-menu ul li a{
+	text-decoration: none;
+	font-size: 19px;
+	text-transform: uppercase;
+	color: white;
+	
+}
+.nav-menu ul li:hover{
+	background-color: rgb(57, 137, 211);
+	
+}
+.navbar::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* menu css end */
+
+/* hero css start */
+.profile{
+	padding: 130px 10px;
+	text-align: center;
+	position: relative;
+}
+.profile .top-weather{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	transition: transform 2s;
+}
+.profile .top-weather:hover{
+	transform: rotate(360deg);
+}
+.profile-dsc h1{
+	font-family: 'Satisfy', cursive;
+	font-size: 35px;
+}
+.profile .buttom-weather{
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	transition: transform 2s;
+}
+.buttom-weather:hover{
+	transform: rotate(360deg);
+}
+.profile-dsc p{
+	font-size: 16px;
+	margin: 20px auto 10px auto;
+}
+.profile{
+	content: '';
+	clear: both;
+}
+/* hero css end */
+
+/* about css start here */
+.about-me{
+	background-color: #0c6168;
+	padding: 10px 10px;
+	color: white;
+	text-align: center;
+}
+h2{
+	font-size: 30px;
+	text-transform: capitalize;
+	text-align: center;
+}
+.about-img img{
+	height: 150px;
+	width: 150px;
+	border-radius: 90px;
+	border: 2px solid black;
+	
+}
+.about-dsc p{
+	
+	margin: 20px 0;
+
+}
+.about-dsc p{
+    font-size: 1.2rem;
+}
+.about-dsc a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.cv-download{
+	padding: 10px;
+	border: none;
+	font-size: 1rem;
+	cursor: pointer;
+
+}
+.about-me::after{
+	clear: both;
+	display: table;
+	content: '';
+}
+
+/* about css end here */
+
+/* expriece css start here */
+.professonal-skill{
+	padding: 20px 25px;
+}
+.card-icon{
+	text-align: center;
+
+}
+.professonal-skill .card{
+	background-color: #0c6168;
+	padding: 50px 30px;
+	border-radius: 10px;
+}
+.card:hover{
+	box-shadow: 0px 0px 4px 2px  rgb(20, 17, 17);
+}
+.card-title{
+	background-color: aquamarine;
+	padding: 7px 0;
+	border-radius: 10px;
+}
+hr{
+	margin: 10px 0;
+}
+.list-item li{
+	list-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 31px 0;
+	position: relative;
+	
+	
+}
+.list-item li:before{
+	width: 100%;
+	background-color: white;
+	height: 20px;
+	content: '';
+	position: absolute;
+	border-radius: 50px;
+	top: 100%;
+	left: 0;
+	
+}
+.list-item li::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 20px;
+	background-color: black;
+	top: 100%;
+	left: 0;
+	border-radius: 50px;
+	transition: 3s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	
+}
+.list-item li.html::after{
+	animation-name: html;
+}
+@keyframes html{
+	to{
+		width: 90%;
+
+	}
+	
+}
+.list-item li.css::after{
+	animation-name: css;
+}
+@keyframes css{
+	to{
+		width: 80%;
+
+	}
+	
+}
+.list-item li.js::after{
+	animation-name: js;
+}
+@keyframes js{
+	to{
+		width: 70%;
+
+	}
+	
+}
+.list-item li.bts::after{
+	animation-name: bts;
+}
+@keyframes bts{
+	to{
+		width: 70%;
+
+	}
+	
+}
+.list-item li.react::after{
+	animation-name: react;
+}
+@keyframes react{
+	to{
+		width: 85%;
+
+	}
+	
+}
+.list-item li.mongodb::after{
+	animation-name: mongodb;
+}
+@keyframes mongodb{
+	to{
+		width: 70%;
+
+	}
+	
+}
+.professonal-skill::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+/* expriece css end here */
+
+/* achivment contact start here  */
+.achievement-skill{
+	background-color: #0c6168;
+	padding: 30px 0;
+}
+.contact-form {
+	text-align: center;
+	padding: 10px 15px;
+}
+.contact-form input{
+	margin: 7px 0;
+}
+.contact-form input, textarea{
+	width: 100%;
+	font-size: 1rem;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	resize: none;
+	text-align: center;
+}
+.contact-form button{
+	border: none;
+	padding: 10px 20px;
+	margin: 10px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+
+.achievement-skill{
+	content: '';
+	display: table;
+	clear: both;
+}
+/* achivment contact end here  */
+
+.contact .btn{
+	padding: 20px;
+	border-radius: 100px;
+	border: none;
+	cursor: pointer;
+}
+.achievement-skill::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+/* footer contact start here */
+.footer-contact{
+	background-color: black;
+
+}
+.footer-menu ul li{
+	display: inline;
+	padding: 0 10px;
+}
+.footer-menu ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: capitalize;
+	text-align: center;
+	
+}
+.footer-menu ul li:hover a{
+	color: #0c6168;
+}
+.footer-text p{
+	color: white;
+	text-align: center;
+}
+
+.footer-contact::after{
+	clear: both;
+	display: table;
+	content: '';
+}
+
+
+
+
+
+
+
+/* footer contact end here */
+.service{
+	height: 300px;
+}
